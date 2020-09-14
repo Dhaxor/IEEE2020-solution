@@ -44,55 +44,7 @@ rl.on('line', (line) => {
 
 let result = [];
 
-// let sort = (list) => {
-//     // top-down implementation
-//     function merge(left, right) {
-//         let arr = [];
-    
-//         while (left.length && right.length) {
-//         if (left[0] < right[0]) {
-//             arr.push(left.shift());
-//         } else {
-//             arr.push(right.shift());
-//         }
-//         }
-//         return arr.concat(left.slice().concat(right.slice()));
-//     }
-  
-//     function mergeSort(arr) {
-//         if (arr.length < 2) {
-//         return arr;
-//         }
-    
-//         const middle = Math.floor(arr.length / 2);
-//         const left = arr.slice(0, middle);
-//         const right = arr.slice(middle);
-    
-//         return merge(mergeSort(left), mergeSort(right));
-//     }
-  
-//     return mergeSort(list);
-// }
-// let bool = false;
 
-// let rank = (list, libraries, partial = []) => {
-//     var s, n, remaining;
-
-//     s = partial.map(x => x.books.map(bookScore)).reduce((previous, current) => {
-//         return previous + current;
-//     }, 0);
-
-//     if(s <= daysForScanning)
-//         result.push({"total" : , "combination": partial});
-
-//     if(bool && partial == []) 
-//         return;
-
-//     list.forEach(element => {
-//         bool = true;
-//         rank(list.slice(list.findIndex(element) + 1), libraries, partial.concat([element]));
-//     });
-// }
 rl.on('close', () => {
     // libraries.map((x) => {
     //     x.daysTo
